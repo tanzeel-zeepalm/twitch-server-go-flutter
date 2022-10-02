@@ -1,20 +1,24 @@
 package main
+
 import (
 	"fmt"
 	"log"
 	"os"
 	"strconv"
 	"time"
+
 	"github.com/AgoraIO-Community/go-tokenbuilder/rtctokenbuilder"
 	"github.com/AgoraIO-Community/go-tokenbuilder/rtmtokenbuilder"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
+
 var appID string
 var appCertificate string
+
 func init() {
-	os.Setenv("APP_ID", "0a516c2727744d4bab20e461e7fe1d9a")
-	os.Setenv("APP_CERTIFICATE", "c54b3c9947fa4a65be5caebee1a9eef1")
+	os.Setenv("APP_ID", "3fcf85696bb94846b5fc0e42e61820d1")
+	os.Setenv("APP_CERTIFICATE", "2d71ee3bea6e4a59b94e0d16e384406f")
 	// loads values from .env into the system
 	if err := godotenv.Load(); err != nil {
 		log.Print("No .env file found")
